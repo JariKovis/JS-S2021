@@ -4,9 +4,14 @@
 
     <!-- script tag is where Javascript goes to -->
     <script>
-        for(var i = 0; i < 400; i++) {
-            console.log("This round is " + i);
+        var arr = [];
+        for (var i=0; i<15; i++) {
+            arr.push(Math.random()*100 );
+            document.write(arr[i]);
         }
+        console.log(arr);
+
+
     </script>
 
 </head>
