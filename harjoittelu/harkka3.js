@@ -49,7 +49,11 @@ var nimilista =[person0, person1, person2, person3, person4];
 var printInfo = function () {
     for (let i = 0; i < nimilista.length; i++) {
         console.log(nimilista[i].firstName + " " +  nimilista[i].address + " age " + nimilista[i].age);
-        document.write(nimilista[i].firstName + " " +  nimilista[i].address + " age " + nimilista[i].age);
+        var nimi = nimilista[i].firstName;
+        var osoite = nimilista[i].address;
+        var ika = nimilista[i].age;
+        document.write("<table><tr><td>nimi</td><td>osoite</td><td>ika</td></tr></table>");
+        //document.write("<table><tr><td>nimilista[i].firstName</td><td>nimilista[i].address</td><td>nimilista[i].age</td></tr></table>");
         document.write("<br>");
       }
    
